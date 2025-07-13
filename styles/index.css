@@ -1,0 +1,413 @@
+body,html {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    scroll-behavior: smooth
+}
+main {
+    flex: 1;
+}
+
+.logo-img {
+  width: 7.5vh;
+  border-radius: 50%;
+}
+.navegador-presentacion {
+    position: fixed;
+    display: flex;   
+    top: 0;
+    left: 0;
+    height: 60px;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(127, 142, 255, 0.708);
+    box-shadow: 3px 10px 4px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+
+.navegador-presentacion ul li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    font-size: 0.4rem;
+  
+}
+
+.navegador-presentacion ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1vw;
+    list-style: none; 
+
+ }
+
+
+
+
+.navegador-presentacion ul a {
+  text-decoration: none; 
+  color: inherit;       
+}
+
+
+
+.navegador-presentacion ul li:hover {
+    background-color: #828181;
+    border-radius: 10px;
+}
+
+.CTA {
+    display: grid;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    animation: animado 1.5s linear infinite;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    left: 0px;
+}
+
+.CTA p {
+    color: black;
+}
+
+@keyframes animado {
+    0% {
+        background: linear-gradient(to right, rgb(248, 225, 95), rgb(99, 99, 250));
+    }
+    50% {
+        background: linear-gradient(to right, rgb(254, 231, 100), rgb(119, 119, 253));
+    }
+    100% {
+        background: linear-gradient(to right, rgb(251, 241, 183), rgb(194, 194, 255));
+    }
+}
+
+.Whatssap {
+    margin: 0.8%;
+    color: green;
+    box-shadow: 2px 2px rgb(43, 255, 0);
+}
+.Whatssap:hover {
+    cursor: pointer;
+    background-color: rgb(147, 168, 168);
+}
+.Messenger {
+    margin: 0.8%;
+    color: blue;
+    box-shadow: 2px 2px aqua;
+}
+.Messenger:hover {
+    cursor: pointer;
+    background-color: rgb(147, 168, 168);
+}
+.Instagram {
+    margin: 0.8%;
+    color: rgb(241, 76, 103);
+    box-shadow: 2px 2px rgb(198, 121, 171);
+}
+.Instagram:hover {
+    cursor: pointer;
+    background-color: rgb(147, 168, 168);
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+      "header header"
+      "aside aside"
+      "articulo articulo"
+      ;
+    gap: 1rem;
+  }
+
+.grid3 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-areas: 
+      "header3 aside3"
+      "articulo3 articulo3"
+      ;
+    gap: 1rem;
+  }
+
+.header3 {
+  grid-template-areas: header3;
+  background-color: #828181;
+  gap: 1rem;
+}
+.aside3 {
+  grid-template-areas: aside3;
+  gap: 1rem;
+
+}
+.aside3 img {
+  width: 24vh;
+  border-radius: 20%;
+}
+.articulo3 {
+  grid-template-areas: articulo3;
+  gap: 1rem;
+}
+
+.Beneficios {
+    background-color: rgb(198, 189, 175);
+}
+
+.header {
+  grid-area: header;
+  background-color: #828181;
+  padding: 1rem;
+}
+
+.aside {
+  grid-area: aside;
+}
+.aside img{
+   width: 9.5vh;
+  border-radius: 50%;
+}
+
+.articulo {
+  grid-area: articulo;
+  padding: 1rem;
+}
+
+.grid{
+  margin: 1%;
+}
+.grid2 {
+  --tam-texto: clamp(0.5rem, 1vw, 1.2rem);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+  "header2 header2"
+  "aside2 articulo2 "
+  ;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.articulo2 {
+  font-size: var(--tam-texto);
+}
+
+.aside2 .img-testimonio {
+  width: calc(var(--tam-texto) * 8);
+  height: calc(var(--tam-texto) * 8);
+  border-radius: 50%;
+}
+.header2 {
+  grid-area: header2;
+}
+
+.aside2 {
+  grid-area: aside2;
+}
+
+.articulo2 {
+  grid-area: articulo2;
+}
+.Testimonios{
+  background-color: #1500fda1;
+}
+.cita {
+  background-image: url("/imgs/pngegg.png");
+  background-size: cover;
+  background-position: center;
+  width: calc(var(--tam-texto) * 30);
+  height: calc(var(--tam-texto) * 10);
+  border-radius: 10%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cita p {
+  font-size: var(--tam-texto);
+  color: #ffffff; 
+  background-color: rgba(0, 0, 255, 0.244);
+}
+
+.header2 p {
+  font-size: clamp(2vw, 3vw, 40%);
+}
+.header2 {
+  animation: fon 1.5s linear infinite ;
+}
+@keyframes fon {
+  0% {
+    background: linear-gradient(to right, rgb(84, 83, 83), rgb(99, 195, 250)) ;
+  }
+  50% {
+    background: linear-gradient(to right, rgb(79, 76, 75), rgb(83, 189, 255));
+  }
+  100% {
+    background: linear-gradient(to right, rgb(134, 133, 132), rgb(44, 174, 255));
+  }
+}
+
+
+.grid2 {
+  margin-top: 1%;
+  left: 0px;
+}
+
+.Titulo {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(243, 243, 208);
+}
+
+.grid4 {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+   "Titulo-Form"
+   "Rellenar-Form"
+
+   "Titulo-Form2"
+   "Rellenar-Form2"
+
+   "Titulo-Form3"
+   "Rellenar-Form3"
+
+   "Titulo-Form4"
+   "Rellenar-Form4"
+  ;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+/* MEDIA */
+
+@media(min-width:480px){
+  .navegador-presentacion ul li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    font-size: 0.5rem;
+  
+
+}
+.navegador-presentacion ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none; 
+    
+
+ }
+
+
+
+}
+
+
+@media (min-width: 1020px) {
+  .grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "header aside"
+      "articulo articulo";
+    gap: 1rem;
+  }
+ .grid4 {
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+   "Titulo-Form Titulo-Form"
+   "Rellenar-Form Rellenar-Form2"
+   "Titulo-Form3 Titulo-Form3"
+   "Rellenar-Form3 Rellenar-Form4"
+
+  ;
+  margin: 1rem;
+
+
+ }
+}
+
+
+
+@media(min-width:720px){
+  .navegador-presentacion ul li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+
+ }
+ .grid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas:
+    "Titulo-Form Titulo-Form2"
+    "Rellenar-Form Rellenar-Form2"
+    "Titulo-Form3 Titulo-Form4"
+    "Rellenar-Form3 Rellenar-Form4";
+   gap: 0.3rem;
+   margin: 1rem;
+ }
+
+ .navegador-presentacion ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none; 
+    
+
+ }
+
+
+}
+
+.Titulo-Form { grid-area: Titulo-Form; }
+.Titulo-Form2 { grid-area: Titulo-Form2; }
+.Titulo-Form3 { grid-area: Titulo-Form3; }
+.Titulo-Form4 { grid-area: Titulo-Form4; }
+
+.Rellenar-Form { grid-area: Rellenar-Form; }
+.Rellenar-Form2 { grid-area: Rellenar-Form2; }
+.Rellenar-Form3 { grid-area: Rellenar-Form3; }
+.Rellenar-Form4 { grid-area: Rellenar-Form4; }
+
+.Formulario-button-Enviar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+}
+footer p{
+  color: #ffffff;
+}

@@ -18,7 +18,7 @@ Landing page profesional diseñada para promocionar suplementos deportivos de al
 ---
 
 ## 📱 Vista previa (captura de pantalla recomendada)
-> Puedes insertar una imagen o gif aquí si lo subes a GitHub Pages o Netlify.
+
 
 ---
 

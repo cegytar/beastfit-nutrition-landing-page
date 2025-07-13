@@ -17,8 +17,11 @@ Landing page profesional diseñada para promocionar suplementos deportivos de al
 
 ---
 
-## 📱 Vista previa (captura de pantalla recomendada)
+## 📱 Vista previa 
 
+<img width="1666" height="852" alt="image" src="https://github.com/user-attachments/assets/aeb71925-b9d2-48bd-a358-b3c318cb6bf3" />
+<img width="1673" height="918" alt="image" src="https://github.com/user-attachments/assets/f4458c81-a733-4f19-b554-16141cd3afac" />
+<img width="1859" height="917" alt="image" src="https://github.com/user-attachments/assets/c3529e41-e70c-434c-a9da-b474755415da" />
 
 ---
 
